@@ -1,0 +1,49 @@
+public class book{
+    
+    string bookname;
+    int noOfPages;
+    string author;
+    int price;
+    int publishedyear;
+    string publisher;
+    string type;
+    {
+        this.bookname=bookname;
+        this.noOfPages=noOfPages;
+        this.author=author;
+        this.price=price;
+        this.publishedyear=publishedyear;
+        this.publisher=publisher;
+        this.type=type;
+
+    }
+    public void bookinfo(){
+           system.out.println("bookname:"+ bookname);
+           system.out.println("noOfPages:"+ noOfPages);
+           system.out.println("author:"+author);
+           systrm.out.println("price:"+price);
+           system.out.println("publishedyear:"+publishedyear);
+           system.out.println("publisher"+publisher);
+           system.out.println("type:"+type);
+
+    }
+    public static void main(string[],args){
+
+        books book1= newbook("the history of tom jones",200, "henry fielding",250,1749,"andriw miller","novel" );
+        books book2= newbook("pride and prejudice",150,"jane austen",300,1813,"whitehall","novel");
+        books book3= newbook("the red and the black",180,"stendhal",320,1830,"levasseur","novel");
+        books book4= newbook("le pere goriot",155,"honore de balzac",250,1819,"revue de paris","novel");
+        books book5= newbook("david copperfield",190,"charles dickens",625,1850,"bradbury and evans","novels");
+        books book6= newbook("provincal manners",500,"gustave flaubert",600,1856,"revue de paries","novels");
+        books book7= newbook("the whale",550,"herman melville",550,1851,"richard bently","novels");
+        
+        book1.bookinfo();
+        book1.bookinfo();
+        book3.bookinfo();
+        book4.bookinfo();
+        book5.bookinfo();
+        book6.bookinfo();
+        book7.bookinfo();
+
+    }
+}
